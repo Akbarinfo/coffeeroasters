@@ -4,23 +4,141 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/col.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Title</title>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <!-- <link rel="stylesheet" href="./css/flexboxgrid.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css">
+  <link rel="stylesheet" href="./css/style.css">
+   <title>Coffeeroastres</title>
 </head>
 <body>
 
 <!-- HEADER PART  -->
-<section id="header-site"></section>
-<header>
+<header class="site-header">
+  <section class="header">
+    <div class="container">
+      <div class="row between-xs middle-xs">
+        <div class="header__logobox">
+          <a href="/"><img class="header__logo" src="img/logo.svg" alt="logo"></a>
+        </div>
+        <button class="header__menu" id="id-menu"><i class='bx bx-menu icon-menu' id="id-icon"></i></button>
+        <nav class="header__nav" id="id-nav">
+          <ul class="header__nav-list row between-xs">
+            <li class="header__nav-item"><a class="header__nav-link" href="#">home</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">About us</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="#">Create your plan</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </section>
 
+    <!-- HERO PART -->
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero__box">
+          <div class="hero__main">
+            <h2 class="hero__title">Great coffee
+              made simple.</h2>
+            <p class="hero__desc">Start your mornings with the world's best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
+            <a class="hero__link" href="#">Create your plan</a>
+          </div>
+        </div>
+      </div>
+    </section>
 </header>
 <!-- HEADER PART END -->
 
 <!-- MAIN PART  -->
 
 <main>
+
+  <!-- MAIN OUR PART -->
+
+ <section class="our">
+    <div class="container">
+      <ul class="row between-lg">
+        <li class="our__item col-lg-3 col-md-12 col-sm">
+          <div class="our__imgbox">
+            <img class="our__img" src="img/kopi1-img.png" alt="our">
+          </div>
+          <div class="our__main">
+            <h2 class="our__title">Gran Espresso</h2>
+            <p class="our__desc">Light and flavorful blend with cocoa and black pepper for an intense experience</p>
+          </div>
+        </li>
+
+        <li class="our__item col-lg-3 col-md-12 col-sm">
+          <div class="our__imgbox">
+            <img class="our__img" src="img/kopi2-img.png" alt="our">
+          </div>
+          <div class="our__main">
+            <h2 class="our__title">Planalto</h2>
+            <p class="our__desc">Brazilian dark roast with rich and velvety body, and hints of fruits and nuts</p>
+          </div>
+        </li>
+
+        <li class="our__item col-lg-3 col-md-12 col-sm ">
+          <div class="our__imgbox">
+            <img class="our__img" src="img/kopi3-img.png" alt="our">
+          </div>
+          <div class="our__main">
+            <h2 class="our__title">Piccollo</h2>
+            <p class="our__desc">Mild and smooth blend featuring notes of toasted almond and dried cherry</p>
+          </div>
+        </li>
+
+        <li class="our__item col-lg-3 col-md-12 col-sm">
+          <div class="our__imgbox">
+            <img class="our__img" src="img/kopi4-img.png" alt="our">
+          </div>
+          <div class="our__main">
+            <h2 class="our__title">Danche</h2>
+            <p class="our__desc">Ethiopian hand-harvested blend densely packed with vibrant fruit notes</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+
+  <!-- MAIN WHY PART  -->
+
+  <section class="why">
+    <div class="container">
+      <div class="why__box">
+        <h2 class="why__title">Why choose us?</h2>
+        <p class="why__desc">A large part of our role is choosing which particular coffees will be featured
+          in our range. This means working closely with the best coffee growers to give
+          you a more impactful experience on every level.</p>
+        <ul class="why__list row">
+          <li class="why__item col-lg-3 col-md-12">
+            <img class="why__img" src="img/why-img-icon.png" alt="img">
+            <div>
+              <h3 class="why__subtitle">Best quality</h3>
+              <p class="why__text">Discover an endless variety of the world's best artisan coffee from each of our roasters.</p>
+            </div>
+          </li>
+          <li class="why__item col-lg-3 col-md-12">
+            <img class="why__img" src="img/why-img-icon2.png" alt="img">
+            <div>
+              <h3 class="why__subtitle">Exclusive benefits</h3>
+              <p class="why__text">Special offers and swag when you subscribe, including 30% off your first shipment.</p>
+            </div>
+          </li>
+          <li class="why__item col-lg-3 col-md-12">
+            <img class="why__img" src="img/why-img-icon3.png" alt="img">
+            <div>
+              <h3 class="why__subtitle">Free shipping</h3>
+              <p class="why__text">We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
 </main>
 
@@ -31,7 +149,7 @@
 <footer>
 
 </footer>
-
+<script src="js/main.js"></script>
 <!-- FOOTER PART END -->
 
 </body>
