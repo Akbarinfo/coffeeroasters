@@ -265,6 +265,30 @@ main {
 
 /* TABLET VERISON PART  */
 
+@media screen and (max-width:992px) {
+
+  .our {
+    background-image: url('../img/our-img-tablet-bg.png');
+  }
+
+  .our__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .our__item {
+    flex-flow: row;
+    align-items: center;
+  }
+
+  .our__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+}
+
 @media screen and (max-width:768px) {
 
   .container {
@@ -444,7 +468,25 @@ main {
 
   .our__item {
     flex-direction: column;
+    flex-flow: column;
     align-items: center;
+  }
+
+  .why__desc {
+    width: 100%;
+  }
+
+  .why__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .why__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: px 33px;
   }
 
 }
